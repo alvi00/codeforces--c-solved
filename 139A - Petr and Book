@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,n=0;
+    int arr[7];
+    cin>>a;
+    for(int i=0;i<7;i++)
+    {
+        cin>>arr[i];
+    }
+
+    int x=arr[0];
+    while(x<a)
+    {
+        n++;
+        n=n%7;
+        x=x+arr[n];
+    }
+    cout<<n+1<<endl;
+    return 0;
+}
